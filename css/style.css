@@ -1,0 +1,582 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+}
+body {
+  margin: 0;
+}
+#logo {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  margin-right: auto;
+  padding: 0 2rem;
+}
+
+/* Nav*/
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+nav {
+  display: flex;
+  margin: auto;
+}
+nav a {
+  margin-right: 15px;
+  padding: 2rem;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+}
+.menu {
+  display: flex;
+  align-items: center;
+  font-weight: normal;
+}
+.menu a:hover {
+  color: blue;
+  border-top: 2px solid blue;
+  background-color: initial;
+  transform: initial;
+  box-shadow: initial;
+}
+
+
+/* Contenu entière de la page*/
+.partie_recherche {padding: 0 2rem;}
+
+
+/* Bloc recherche */
+.bloc_recherche {
+  display: flex;
+  flex-direction: row;
+}
+.icon_location {
+  border: 10px solid #F2F2F2;
+  border-radius: 1rem 0rem 0rem 1rem;
+  padding: 5px;
+  background-color: #F2F2F2;
+}
+.barre_de_recherche {
+  display: flex;
+  border-radius: 15px;
+  text-align-last: start;
+  border-color: #F2F2F2;
+  width: 20%;
+}
+input {
+  appearance: none;
+  border: none;
+  font-weight: bold;
+  width: 100%;
+}
+.bouton_recherche {
+  border: none;
+  font-weight: bold;
+  border-radius: 0rem 1rem 1rem 0rem; 
+  color: white;
+  background-color: #0065FC;
+  cursor: pointer;
+  padding: 15px;
+}
+.search_icon {
+  display: none;
+}
+
+/* Fitlres */
+.filtre {
+display: flex;
+align-items: center;
+margin-top: 20px;
+margin-bottom: 30px;
+flex-wrap: wrap;
+}
+.filtres {
+  margin-right: 25px;
+  margin-bottom: 1rem;
+}
+.filtres_titres {
+  font-size: 16px;
+}
+.filtreTexteIcon {
+  display: flex;
+  align-items: center;
+  border: 2px solid #f2f2f2;
+  height: 50px;
+  border-radius: 30px;
+  margin-right: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+  margin-bottom: 1rem;
+}
+.filtre_texte {
+  margin: 0px 10px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.filtreIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  width: 52px;
+  height: 52px;
+  color: #0065FC; 
+  background-color: rgb(204, 232, 250);
+}
+
+/* Info Icone */
+.info {
+  display: flex;
+  align-items: center;
+  }
+.filtre_info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  font-weight: lighter;
+  width: 30px;
+  height: 30px;
+  color: #0065FC;
+  background-color:white; 
+  border: solid 1px #d9d9d9;
+  margin-bottom: 30px;
+}
+.texte {
+  margin: 0px 10px;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
+  /* Partie 1 (Hébergements à Marseille) */
+.appartements_list {
+  display: flex;
+  gap: 1rem;
+  border: 1px solid none;
+  padding: 20px;
+}
+.appartements_list div { 
+  background-color: #f2f2f2;
+  border: 1px solid none;
+  border-radius: 1rem ;
+}
+.accomodation {
+flex-basis: 70%;
+padding: 30px!important;
+}
+.accomodation  a {
+text-decoration: none;
+color: black;
+width: 30%;
+background-color: white;
+border-radius: 1rem;
+padding: 4px;
+box-sizing: content-box;
+}
+.afficher :last-of-type {
+  background-color: #f2f2f2;
+}
+.afficher {
+  margin-top: 30px;
+  font-weight: bold;
+}
+
+
+/* accomodation_list */
+.accomodation_list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  margin: 0;
+}
+.accomodation_list div {
+  flex-basis: 30%;
+}
+
+  /* Partie 2 (Les plus populaires) */
+.populaires {
+flex-basis: 30%;
+padding: 30px!important;
+}
+.appartements_list .populaires {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+    
+/* Appartements_carte */
+.appartements_carte a {
+  background-color: white;
+  border-radius: 1rem;
+  padding: 1rem;
+  box-shadow: 0 0 16px #0000002e;
+  cursor: pointer;
+  flex-grow: 1;
+  width: 100%;
+}
+.appartements_carte img {
+  border-radius: 1rem 1rem 0rem 0rem;
+  height: 8rem;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.appartements_carte p, .appartements_carte h3 {
+  margin: 2px;
+  padding-left: 10px;
+  line-height: 1.5rem;
+}
+
+/* Populaires_carte */
+.populaires .appartements_carte img { 
+  height: 10rem;
+  width: 40%;
+  border-radius: 1rem 0 0 1rem;
+  min-width: 40%;
+}
+.populaires_accomodation {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  background-color: white!important;
+}
+a:hover .populaires_accomodation {
+  background-color: lightcyan!important;
+}
+.populaires_accomodation p:last-of-type {
+  margin-top: auto;
+}
+.populaires_carte {
+  display: flex;
+  flex-direction: row;
+  min-width: 30rem;
+  margin-bottom: 10px;
+  cursor: pointer;
+  padding: 4px;
+  background-color: white;
+  border-radius: 1rem;
+  text-decoration: black;
+  color: black;
+}
+.populaires h2 {
+  display: flex;
+  justify-content: space-between;
+}
+.populaires h2, .accomodation h2 {
+  margin-top: 1rem;
+}
+
+/* Stars color */
+.blue {
+  color: #0065FC;
+}
+.grey { 
+  color: #d9d9d9;
+}
+
+/* Partie 3 (Activités à Marseille) */
+.activities p {
+font-weight: bold;
+padding-left: 10px;
+justify-content: space-between;
+}
+.activities {
+cursor: pointer;
+padding: 20px;
+}
+.activities img {
+  border-radius: 1rem 1rem 1rem 1rem;
+  height: 300px;
+}
+.large_pic {
+  display: flex;
+  align-content: flex-start;
+  margin: 50px;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0;
+  width: 23%;
+  box-shadow: 0 0 16px #0000002e;
+  border-radius: 1rem 1rem 1rem 1rem;
+  text-decoration: black ;
+  color: black;
+}
+.medium1, .medium2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0;
+  width: 100%;
+  box-shadow: 0 0 16px #0000002e;
+  border-radius: 1rem 1rem 1rem 1rem;
+  text-decoration: black ;
+  color: black;
+}
+.small_pic {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0;
+  width: 100%;
+  box-shadow: 0 0 16px #0000002e;
+  border-radius: 1rem 1rem 1rem 1rem;
+  text-decoration: black ;
+  color: black;
+}
+.large_pic img {
+  height: 600px;
+  border-radius: 1rem 1rem 0rem 0rem;
+  object-fit: cover;
+}
+.medium1 img {
+  height: 300px;
+  border-radius: 1rem 1rem 0rem 0rem;
+  object-fit: cover;
+}
+.medium2 img {
+  height: 200px;
+  border-radius: 1rem 1rem 0rem 0rem;
+  object-fit: cover;
+}
+.small_pic img {
+  height: 250px;
+  border-radius: 1rem 1rem 0rem 0rem;
+  object-fit: cover;
+}
+.ensemble_bloc_marseille {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+.column2, .column4 {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 23%;
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  background-color: #F2F2F2;
+  width: 100%;
+  padding: 20px;
+}
+.footer a {
+  text-decoration: none;
+  color: black;
+  font-weight: 300;
+  padding-bottom: 1rem;
+}
+.propos, 
+.nos_hébergements,
+.assistance {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding-top: 25px;
+  text-decoration: none;
+  list-style-type: none;
+  padding: 10px;
+  width: 33%;
+}
+a:hover {
+  background-color: lightcyan;
+  cursor: pointer;
+  color:  #0065fc;
+  transform: scale(1.03);
+  box-shadow: initial
+}
+.footer a:hover {
+  background-color: initial;
+  transform: initial;
+  box-shadow: initial;
+}
+
+
+/* Media queries */
+@media screen and (max-width: 992px){
+  
+ .accomodation {
+   flex-basis: 100%;
+   display: block;
+   order: 1;
+   width: 100%;
+ }
+ .appartements_list {
+   flex-direction: column;
+   width: 100%;
+ }
+ .activities {
+  flex-direction: column;
+  width: 100%;
+ }
+ .ensemble_bloc_marseille {
+  flex-direction: column;
+  width: 100%;
+}
+.large_pic, .medium1, .medium2, .small_pic {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+.large_pic img, .medium1 img, .medium2 img, .small_pic img {
+  height: 10rem;
+}
+.column2, .column4 {
+  width: 100%;
+}
+.accomodation a {
+  width: 45%;
+}
+.appartements_carte img {
+  width: 100%;
+}
+.accomodation_list {
+  justify-content: space-between;
+}
+}
+
+
+@media screen and (max-width: 768px){
+  #logo {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 15px;
+    margin-left: 4rem;
+  }
+  .nav {
+    display: flex;
+  }
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .menu a {
+    width: 50%;
+    text-align: center;
+  }
+  .menu-div {
+    width: 50%;
+    border-bottom: 3px solid #F2F2F2;
+    padding-bottom: 10px;
+  }
+  .menu-div:hover{
+    border-bottom: 3px solid blue;
+  }
+  .menu a:hover {
+    border-top: none;
+    width: 50%;
+  }
+  .intro {
+    margin-bottom: 2rem;
+  }
+  .intro p {
+    margin-top: -10px;
+  }
+  .search_text {
+    display: none;
+  }
+  .search_icon { 
+    display: inline;
+  }
+  .filtres {
+    width: 100%;
+  }
+  .filtre {
+    margin-bottom: 15px;
+  }
+  .filtres_titres {
+    margin-bottom: -3px;
+  }
+  .filtreTexteIcon {
+    margin-bottom: 1rem;
+  }
+  .appartements_list {
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+  }
+  .accomodation {
+    flex: none;
+  }
+  .barre_de_recherche {
+    width: 100%;
+  }
+  .accomodation a {
+    width: 100%;
+    box-shadow: 0 0 16px #0000002e;
+  }
+  .afficher a {
+    background-color: white;
+    box-shadow: none;
+    text-transform: initial!important;
+    text-decoration: initial!important;
+  }
+  .afficher :last-of-type {
+    background-color : white;
+  }
+  .appartements_list div .afficher {
+    background-color: white;
+  }
+  .activities {
+    padding: 30px;
+    margin-top: 2rem;
+  }
+  .ensemble_bloc_marseille {
+    margin-bottom: -1rem;
+  }
+  .appartements_list div.accomodation {
+    background-color: white;
+  }
+  .appartements_list .accomodation_list {
+    background-color: white;
+  }
+  .partie3 {
+    margin-top: -4rem;
+  }
+  .populaires_carte {
+    min-width: 100%;
+  }
+  .footer {
+    display: block;
+  }
+  .propos,
+  .nos_hébergements,
+  .assistance {
+    width: 100%;
+    padding: 0;
+    margin: 1rem 0;
+  }
+}
+
+@media screen and (max-width: 1210px) {
+  .accomodation a {
+    width: 45%;
+    justify-content: space-between;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    border-radius: 1rem;
+    padding: 4px;
+    box-sizing: content-box;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .accomodation a {
+    width: 100%;
+  }
+}
