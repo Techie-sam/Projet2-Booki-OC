@@ -29,10 +29,21 @@ Booki est une petite entreprise proposant un outil de planification de vacances.
 - `images/` : Dossier contenant les images du site
 
 ## Aperçu
-[Description visuelle du site et de ses principales sections]
+Le site est déployé et accessible à l'adresse suivante : [Booki](https://techie-sam.github.io/Projet2-Booki-OC/)
+
+## Déploiement
+Le site est déployé en utilisant GitHub Pages. Pour déployer vos propres modifications :
+
+1. Poussez vos changements vers la branche main :
+   ```bash
+   git push origin main
+   ```
+
+2. Le déploiement se fera automatiquement sur GitHub Pages.
+3. Vous pourrez voir votre site à l'adresse : https://techie-sam.github.io/Projet2-Booki-OC/
 
 ## Auteur
-- Samuel BELLEC
+- Samira Tahirou
 
 ## Statut du Projet
 Ce projet a été réalisé dans le cadre de la formation Développeur Web d'OpenClassrooms.
